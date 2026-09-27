@@ -1,0 +1,14 @@
+.DS_Store
+*.sqlite*
+*.db
+*.csv
+*.json
+*.txt
+*.log
+# Allow only the synthetic fixture inputs.
+!internal/verifier/testdata/golden/*/apple.csv
+!internal/verifier/testdata/golden/*/bitwarden.json
+!internal/verifier/testdata/golden/*/*.txt
+/cases/
+/exports/
+/bw2apple

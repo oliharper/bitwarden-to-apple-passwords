@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "type": 1,
+      "name": "Incomplete",
+      "login": {
+        "username": "user",
+        "password": null,
+        "uris": [
+          {
+            "uri": "https://invented.test/login"
+          }
+        ],
+        "fido2Credentials": [
+          {
+            "credentialId": "PRIVATE_PASSKEY_SENTINEL_K3"
+          }
+        ]
+      },
+      "passwordHistory": [
+        {
+          "password": "PRIVATE_HISTORY_SENTINEL_H6",
+          "lastUsedDate": "2024-01-01T00:00:00Z"
+        }
+      ]
+    }
+  ],
+  "extraRoot": {
+    "nested": "PRIVATE_ROOT_SENTINEL_X4"
+  }
+}

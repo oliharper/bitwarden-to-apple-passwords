@@ -1,0 +1,11 @@
+version: "2"
+sql:
+  - engine: "sqlite"
+    schema: "internal/verifier/schema.sql"
+    queries: "internal/verifier/queries"
+    gen:
+      go:
+        package: "db"
+        out: "internal/verifier/db"
+        sql_package: "database/sql"
+        emit_empty_slices: true

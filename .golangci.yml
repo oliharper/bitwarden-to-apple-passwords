@@ -1,0 +1,27 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - modernize
+    - staticcheck
+    - unused
+  settings:
+    errcheck:
+      exclude-functions:
+        - (*database/sql.Tx).Rollback
+    modernize:
+      disable:
+        - slicesbackward # Reverse searches need the index for the selected path element.
+        - stringsbuilder # Coverage appends at most two fixed header labels.
+    staticcheck:
+      checks:
+        - SA*
+        - S1*
+
+formatters:
+  enable:
+    - goimports

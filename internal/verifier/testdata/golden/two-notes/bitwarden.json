@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "type": 1,
+      "name": "Archive Account",
+      "login": {
+        "username": "user",
+        "password": "PRIVATE_PASSWORD_SENTINEL_R9",
+        "uris": [
+          {
+            "uri": "https://invented.test/login"
+          }
+        ]
+      },
+      "notes": "Archive phrase PRIVATE_NOTE_SENTINEL_Q7\nPIN 0042"
+    }
+  ]
+}
